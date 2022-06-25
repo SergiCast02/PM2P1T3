@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2P1T3.Views.Modificar">
+    <ContentPage.Content>
+        <StackLayout Padding="10, 10, 10, 10">
+            <StackLayout>
+                <Label Text="{Binding Id}" Margin="0, 25, 0, 0" TextColor="Black" FontSize="Medium"></Label>
+                <Entry IsEnabled="False" Keyboard="Text" x:Name="Id" BackgroundColor="DodgerBlue" TextColor="White"></Entry>
+            </StackLayout>
+            
+            <StackLayout>
+                <Label Text="{Binding Nombres}" Margin="0, 25, 0, 0" TextColor="Black" FontSize="Medium"></Label>
+                <Entry Keyboard="Text" x:Name="Nombres" BackgroundColor="DodgerBlue" TextColor="White"></Entry>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="{Binding Apellidos}" Margin="0, 0, 0, 0" TextColor="Black" FontSize="Medium"></Label>
+                <Entry Keyboard="Text" x:Name="Apellidos" BackgroundColor="DodgerBlue" TextColor="White"></Entry>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="{Binding Edad}" Margin="0, 0, 0, 0" TextColor="Black" FontSize="Medium"></Label>
+                <Entry Keyboard="Numeric" x:Name="Edad" BackgroundColor="DodgerBlue" TextColor="White"></Entry>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="{Binding Correo}" Margin="0, 0, 0, 0" TextColor="Black" FontSize="Medium"></Label>
+                <Entry Keyboard="Email" x:Name="Correo" BackgroundColor="DodgerBlue" TextColor="White"></Entry>
+            </StackLayout>
+
+            <StackLayout>
+                <Label Text="{Binding Direccion}" Margin="0, 0, 0, 0" TextColor="Black" FontSize="Medium"></Label>
+                <Entry Keyboard="Text" x:Name="Direccion" BackgroundColor="DodgerBlue" TextColor="White"></Entry>
+            </StackLayout>
+
+            <Button Text="Actualizar" HeightRequest="50" BackgroundColor="#EED56C" BorderColor="Black" BorderWidth="1" Margin="0,5,0,0"
+                x:Name="btnsalvar" Clicked="btnsalvar_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
